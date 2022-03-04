@@ -30,27 +30,31 @@ const App = () => {
   };
 
   const output = (num) => {
-    switch (num) {
-      case 0:
-        setResult("Siblings");
-        break;
-      case 1:
-        setResult("Friends");
-        break;
-      case 2:
-        setResult("Love");
-        break;
-      case 3:
-        setResult("Affection");
-        break;
-      case 4:
-        setResult("Marriage");
-        break;
-      case 5:
-        setResult("Enemy");
-        break;
-      default:
-        setResult(null);
+    if (name1 && name2) {
+      switch (num) {
+        case 0:
+          setResult("Siblings");
+          break;
+        case 1:
+          setResult("Friends");
+          break;
+        case 2:
+          setResult("Love");
+          break;
+        case 3:
+          setResult("Affection");
+          break;
+        case 4:
+          setResult("Marriage");
+          break;
+        case 5:
+          setResult("Enemy");
+          break;
+        default:
+          setResult(null);
+      }
+    } else {
+      setResult("Please Enter valid input");
     }
   };
 
@@ -90,3 +94,4 @@ const App = () => {
 };
 
 export default App;
+
