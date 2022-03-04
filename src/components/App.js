@@ -39,7 +39,7 @@ const App = () => {
           setResult("Friends");
           break;
         case 2:
-          setResult("Love");
+          setResult("Marriage");
           break;
         case 3:
           setResult("Affection");
