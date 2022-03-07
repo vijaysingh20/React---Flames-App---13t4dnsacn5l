@@ -5,6 +5,7 @@ const App = () => {
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   const [result, setResult] = useState("");
+  let count = 0;
 
   const handleFirstChange = (e) => {
     setName1(e.target.value);
@@ -39,7 +40,12 @@ const App = () => {
           setResult("Friends");
           break;
         case 2:
-          setResult("Love");
+          if(count === 0) {
+            setResult("Love");
+            count = count+1;
+          } else {
+            setResult("Marriage");
+          }
           break;
         case 3:
           setResult("Affection");
