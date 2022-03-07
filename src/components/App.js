@@ -41,11 +41,7 @@ const App = () => {
           break;
         case 2:
           if(count === 0) {
-            setResult("Love");
-            count = count+1;
-          } else {
-            setResult("Marriage");
-          }
+          setResult("Love");
           break;
         case 3:
           setResult("Affection");
