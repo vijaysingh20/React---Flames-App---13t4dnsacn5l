@@ -40,7 +40,6 @@ const App = () => {
           setResult("Friends");
           break;
         case 2:
-          if(count === 0) {
           setResult("Love");
           break;
         case 3:
